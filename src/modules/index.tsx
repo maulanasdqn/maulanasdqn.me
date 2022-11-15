@@ -2,7 +2,7 @@ import Navbar from "@components/Navbar";
 import MainLayout from "layouts/Main";
 import ContentLayout from "layouts/Content";
 import { FC, Fragment, ReactElement } from "react";
-import me from "../../public/assets/me.jpg";
+import me from "/assets/me.jpg";
 
 const HomeModules: FC = (): ReactElement => {
   return (
