@@ -1,9 +1,5 @@
-import type { ButtonHTMLAttributes, FC, ReactElement } from "react";
-
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  type: "button" | "submit" | "reset";
-  text: string;
-}
+import type { FC, ReactElement } from "react";
+import type { ButtonProps } from "@util/Interfaces";
 
 const Button: FC<ButtonProps> = ({ type, text }): ReactElement => {
   return (

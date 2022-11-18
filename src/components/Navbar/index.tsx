@@ -10,7 +10,7 @@ const Navbar: FC = (): ReactElement => {
           Maulana | Personal Web
         </figcaption>
       </figure>
-      <nav className="flex items-center gap-x-4">
+      <nav className="md:flex hidden items-center gap-x-4">
         {NAVBAR_MENU.map((x, key) => (
           <span
             key={key}

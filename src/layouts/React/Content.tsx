@@ -6,7 +6,7 @@ type ContentLayoutTypes = {
 
 const ContentLayout: FC<ContentLayoutTypes> = ({ children }): ReactElement => {
   return (
-    <section className="flex flex-col items-center w-1/2">{children}</section>
+    <section className="flex flex-col items-center w-full lg:w-1/2">{children}</section>
   );
 };
 
