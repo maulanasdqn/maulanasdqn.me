@@ -16,6 +16,7 @@ export default defineConfig({
             sans: "Lato",
             mono: ["Fira Code", "Fira Mono:400,700"],
             lobster: "Lobster",
+            bold: "Lato:800",
             lato: [
               {
                 name: "Lato",

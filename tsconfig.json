@@ -8,7 +8,9 @@
       "@components/*": ["components/*"],
       "@util/*": ["utilities/*"],
       "@layouts/*": ["layouts/*"],
-      "@modules/*": ["modules/*"]
+      "@modules/*": ["modules/*"],
+      "@store/*": ["store/*"],
+      "@services/*": ["services/*"]
     }
   },
   "include": ["src"]

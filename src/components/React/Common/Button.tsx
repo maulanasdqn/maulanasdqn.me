@@ -1,13 +1,23 @@
 import type { FC, ReactElement } from "react";
 import type { ButtonProps } from "@util/Interfaces";
 
-const Button: FC<ButtonProps> = ({ type, text }): ReactElement => {
+const Button: FC<ButtonProps> = ({
+  type,
+  text,
+  className,
+  onClick,
+  to = "",
+  target = "",
+}): ReactElement => {
   return (
-    <button
-      className="p-2 border-2 bg-white text-gray-600 border-green-500 font-medium w-auto rounded h-auto bg-gray-800"
-      type={type}
-    >
-      {text}
+    <button onClick={onClick} className={className} type={type}>
+      {to === "" ? (
+        text
+      ) : (
+        <a href={to} target={target}>
+          {text}
+        </a>
+      )}
     </button>
   );
 };

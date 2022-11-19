@@ -8,9 +8,11 @@ const { title = "Personal Website" } = Astro.props;
     <meta charset="utf-8" />
     <title>Maulana Sodiqin | {title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="software" content="software engineering" />
   </head>
   <body class="bg-gray-800">
-    <HomeModules />
-    <slot />
+    <HomeModules client:load>
+      <slot />
+    </HomeModules>
   </body>
 </html>

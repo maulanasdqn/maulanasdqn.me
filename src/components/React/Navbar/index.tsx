@@ -11,18 +11,23 @@ const Navbar: FC = (): ReactElement => {
         </figcaption>
       </figure>
       <nav className="md:flex hidden items-center gap-x-4">
-        {NAVBAR_MENU.map((x, key) => (
-          <span
+        {NAVBAR_MENU.map((menu, key) => (
+          <a
             key={key}
-            className="font-[600] hover:text-yellow-500 hover:border-b-2 cursor-pointer text-base text-white"
+            href={menu.link}
+            className="font-600 font-lato hover:text-red-500 hover:border-b-2 hover:border-red-500 border-b-2 border-transparent cursor-pointer text-base text-white"
           >
-            {x}
-          </span>
+            {menu.name}
+          </a>
         ))}
       </nav>
-      <a href={LINKDIN} target={"_blank"}>
-        <Button type="button" text="Hire Me!" />
-      </a>
+      <Button
+        to={LINKDIN}
+        target="_blank"
+        className="bg-red-700 w-auto h-auto p-2 text-white font-medium rounded-lg"
+        type="button"
+        text="Hire Me!"
+      />
     </header>
   );
 };
