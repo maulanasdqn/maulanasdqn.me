@@ -6,7 +6,7 @@ type MainLayoutTypes = {
 
 const MainLayout: FC<MainLayoutTypes> = ({ children }): ReactElement => {
   return (
-    <section className="flex w-full h-screen justify-between px-12">
+    <section className="flex w-full h-screen justify-between px-6 md:px-12">
       {children}
     </section>
   );
