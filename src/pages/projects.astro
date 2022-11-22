@@ -1,8 +1,8 @@
 ---
-import Main from "@layouts/Astro/Main.astro";
 import ProjectModules from "@modules/Astro/ProjectModules.astro";
+import ProjectsService from "@services/Projects";
+
+const getData = await ProjectsService.get();
 ---
 
-<Main title="Homepage">
-  <ProjectModules />
-</Main>
+<ProjectModules ProjectData={getData} />

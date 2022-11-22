@@ -1,5 +1,5 @@
 {
-  "name": "@example/basics",
+  "name": "portfolio",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -9,6 +9,7 @@
     "preview": "astro preview",
     "astro": "astro"
   },
+  "license": "MIT",
   "dependencies": {
     "@astrojs/react": "^1.2.2",
     "@nanostores/react": "^0.4.0",

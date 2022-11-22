@@ -1,0 +1,7 @@
+---
+const { gap = "4", cols = "4", rows = "3" } = Astro.props;
+---
+
+<section class={`grid grid-cols-${cols} grid-rows-${rows} gap-${gap} w-full`}>
+  <slot />
+</section>
