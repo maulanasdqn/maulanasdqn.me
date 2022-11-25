@@ -1,9 +1,9 @@
 ---
+import { HOME_PAGE } from "@util/Constant";
 import Head from "@components/Astro/Head.astro";
 import Content from "@layouts/Content.astro";
 import Main from "@layouts/Main.astro";
-import Counter from "@modules/React/Counter";
-import { HOME_PAGE } from "@util/Constant";
+import Header from "@components/Vue/Header.vue";
 ---
 
 <!DOCTYPE html>
@@ -17,7 +17,6 @@ import { HOME_PAGE } from "@util/Constant";
         <div
           class="flex flex-col transition-all transform ease-in-out delay-500 gap-y-3 items-start h-auto"
         >
-          <Counter client:load />
           <h1 class="text-2xl lg:text-4xl text-white font-sans">
             {HOME_PAGE.TITLE}
           </h1>
