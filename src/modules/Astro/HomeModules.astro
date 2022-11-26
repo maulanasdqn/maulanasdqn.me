@@ -1,9 +1,8 @@
 ---
-import { HOME_PAGE } from "@util/Constant";
 import Head from "@components/Astro/Head.astro";
+import HomeModules from "@modules/React/HomeModules";
 import Content from "@layouts/Content.astro";
 import Main from "@layouts/Main.astro";
-import Header from "@components/Vue/Header.vue";
 ---
 
 <!DOCTYPE html>
@@ -11,33 +10,7 @@ import Header from "@components/Vue/Header.vue";
   <Head title="Home" />
   <Main>
     <Content>
-      <section
-        class="flex flex-col items-start justify-start w-full h-full gap-y-6 py-6"
-      >
-        <div
-          class="flex flex-col transition-all transform ease-in-out delay-500 gap-y-3 items-start h-auto"
-        >
-          <h1 class="text-2xl lg:text-4xl text-white font-sans">
-            {HOME_PAGE.TITLE}
-          </h1>
-          <span
-            class="flex text-4xl font-lato font-700 font-italic text-red-500 lg:text-5xl"
-          >
-            {HOME_PAGE.ME}
-          </span>
-          <span class="flex text-1xl font-sans text-white lg:text-2xl">
-            {HOME_PAGE.ROLE}
-          </span>
-        </div>
-        <p class="text-white font-lato font-600">
-          {HOME_PAGE.STORY}
-          <a
-            class="hover:border-b-2 hover:border-white border-b-2 border-transparent"
-            target="_blank"
-            href={HOME_PAGE.LINK}>@psudevteam</a
-          >
-        </p>
-      </section>
+      <HomeModules />
     </Content>
   </Main>
 </html>

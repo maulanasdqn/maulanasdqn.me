@@ -1,13 +1,10 @@
 import { defineConfig } from "astro/config";
+import { presetWebFonts } from "unocss";
 import Unocss from "@unocss/astro";
 import react from "@astrojs/react";
-import presetUno from "@unocss/preset-uno";
-import { presetWebFonts } from "unocss";
-
-// https://astro.build/config
 import vue from "@astrojs/vue";
+import presetUno from "@unocss/preset-uno";
 
-// https://astro.build/config
 export default defineConfig({
   integrations: [Unocss({
     presets: [presetUno(), presetWebFonts({
