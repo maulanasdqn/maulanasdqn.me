@@ -3,7 +3,7 @@ import { HOME_PAGE } from "@util/Constant"
 
 const HomeModules: FC = (): ReactElement => {
   return (
-    <section className="flex flex-col items-start justify-start w-full h-full gap-y-6 py-6">
+    <section className="flex items-start justify-between w-full h-full gap-y-6 py-6">
       <div className="flex flex-col transition-all transform ease-in-out delay-500 gap-y-3 items-start h-auto">
         <h1 className="text-2xl lg:text-4xl text-white font-sans">
           {HOME_PAGE.TITLE}
@@ -14,7 +14,6 @@ const HomeModules: FC = (): ReactElement => {
         <span className="flex text-1xl font-sans text-white lg:text-2xl">
           {HOME_PAGE.ROLE}
         </span>
-      </div>
       <p className="text-white font-lato font-600">
         {HOME_PAGE.STORY}
         <a
@@ -25,6 +24,8 @@ const HomeModules: FC = (): ReactElement => {
           @psudevteam
         </a>
       </p>
+        <button class="bg-transparent border-white border-2 rounded-lg text-white font-medium p-2">Download CV</button>
+      </div>
     </section>
   );
 };
