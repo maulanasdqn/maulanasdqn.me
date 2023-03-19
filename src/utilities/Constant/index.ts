@@ -1,8 +1,6 @@
 export const NAVBAR_MENU = [
   { name: "Home", link: "/" },
   { name: "About", link: "/about" },
-  { name: "Projects", link: "/projects" },
-  { name: "Services", link: "/services" },
 ];
 
 export const LINKDIN = "https://www.linkedin.com/in/maulana-sodiqin-1b0126184/";

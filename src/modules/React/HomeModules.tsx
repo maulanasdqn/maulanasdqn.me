@@ -24,7 +24,7 @@ const HomeModules: FC = (): ReactElement => {
           @psudevteam
         </a>
       </p>
-        <button class="bg-transparent border-white border-2 rounded-lg text-white font-medium p-2">Download CV</button>
+        <button type="button" className="bg-transparent border-white border-2 rounded-lg text-white font-medium p-2">Download CV</button>
       </div>
     </section>
   );
