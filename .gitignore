@@ -21,5 +21,6 @@ pnpm-debug.log*
 
 # Devenv
 .devenv*
+.dirvenv*
 devenv.local.nix
 
