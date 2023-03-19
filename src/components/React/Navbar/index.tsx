@@ -4,7 +4,7 @@ import { LINKDIN, NAVBAR_MENU } from "@util/Constant";
 
 const Navbar: FC = (): ReactElement => {
   return (
-    <header className="flex items-center py-6 px-6 md:px-12 justify-between w-full">
+    <header className="sticky top-0 shadow-gray-700 shadow-sm bg-gray-800 z-10 flex items-center py-6 px-6 md:px-12 justify-between w-full">
       <figure className="flex items-center">
         <figcaption className="text-xl font-bold font-sans text-white">
           Maulana | Personal Web

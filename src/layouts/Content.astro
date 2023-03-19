@@ -1,7 +1,7 @@
 ---
-const { isCenter = false } = Astro.props;
+const { isCenter = false, class="" } = Astro.props;
 ---
 
-<section class="flex flex-col items-center w-full lg:w-1/2">
+<section class={`flex flex-col items-center w-full lg:w-1/2 ${class}`}>
   <slot />
 </section>

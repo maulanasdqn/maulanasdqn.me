@@ -9,8 +9,13 @@ import Main from "@layouts/Main.astro";
 <html lang="en">
   <Head title="Home" />
   <Main>
+    <Content class="md:order-1 order-2">
+      <HomeModules client="load" />
+    </Content>
     <Content>
-      <HomeModules />
+      <section class="flex justify-end w-full">
+        <img src="/assets/me.webp" width="400" height="400" loading="lazy" draggable="false" alt="profile photo" sizes="400, 200"/>
+      </section>
     </Content>
   </Main>
 </html>
