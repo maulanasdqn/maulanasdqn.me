@@ -10,18 +10,19 @@ import Main from "@layouts/Main.astro";
   <Head title="Home" />
   <Main>
     <Content>
-      <HomeModules client="load" />
+      <HomeModules client:load />
     </Content>
     <Content>
       <section class="md:flex hidden justify-end w-full">
-        <img 
-        src="/assets/me.webp"
-        width="400"
-        height="400"
-        loading="eager"
-        draggable="false"
-        alt="profile photo"
-        sizes="400, 200"/>
+        <img
+          src="/assets/me.webp"
+          width="400"
+          height="400"
+          loading="eager"
+          draggable="false"
+          alt="profile photo"
+          sizes="400, 200"
+        />
       </section>
     </Content>
   </Main>
