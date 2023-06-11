@@ -1,13 +1,16 @@
 import { AnimatePresence, motion } from "framer-motion";
+import { FC, ReactElement } from "react";
+import { TIconProps } from "./types";
 
-export const IconStar = ({ className, x }: { className?: string; x: number }) => (
+export const IconStar: FC<TIconProps> = ({ className, x, y }): ReactElement => (
   <AnimatePresence>
     <motion.svg
       className={className}
-      animate={{ rotate: 360, x: x * 2, y: x * 3 }}
+      animate={{ rotate: 360, x: x, y }}
       transition={{ ease: "linear", duration: 5, repeat: Infinity }}
       exit={{
-        x: x * 20,
+        x,
+        y,
       }}
       fill="#000000"
       height="30px"

@@ -1,7 +1,8 @@
 import { FC, ReactElement } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { TIconProps } from "./types";
 
-export const IconCloud: FC<{ className: string }> = ({ className }): ReactElement => (
+export const IconCloud: FC<TIconProps> = ({ className }): ReactElement => (
   <AnimatePresence>
     <motion.svg
       animate={{ rotate: 360 }}
