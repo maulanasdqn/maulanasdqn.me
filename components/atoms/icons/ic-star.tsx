@@ -10,9 +10,16 @@ export const IconStar: FC<{ x: number; y: number }> = ({ x, y }): ReactElement =
         top: 0,
         right: 0,
       }}
-      animate={{ width: [5, 10, 5], height: [5, 10, 5], rotate: 360, x: [x, x], y: [y, y] }}
+      animate={{
+        width: [5, 10, 5],
+        height: [5, 10, 5],
+        rotate: 360,
+        x: [x, x],
+        y: [y, y],
+        opacity: [0, 20, 0],
+      }}
       transition={{
-        duration: 2,
+        duration: 5,
         repeat: Infinity,
       }}
       version="1.1"
