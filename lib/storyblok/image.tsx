@@ -12,6 +12,6 @@ export const StoryBlokImage: FC<any> = ({ blok }): ReactElement => (
     loading="eager"
     priority
     quality={100}
-    className="md:w-[400px] md:h-[400px] w-[200px] h-[200px]"
+    className="sm:w-[400px] sm:h-[400px] w-[200px] h-[200px]"
   />
 );

@@ -1,28 +1,27 @@
 import { FC, ReactElement } from "react";
-import { TIconProps } from "./types";
 import { AnimatePresence, motion } from "framer-motion";
 
-export const IconCresentMoon: FC<TIconProps> = (props): ReactElement => (
+export const IconCresentMoon: FC = (): ReactElement => (
   <AnimatePresence>
     <motion.svg
       style={{
         position: "fixed",
         x: -200,
-        y: 40,
+        y: 20,
         top: 0,
         left: 0,
       }}
       animate={{
         opacity: 100,
-        x: 60,
-        y: 40,
-        width: 200,
-        height: 200,
+        x: 20,
+        y: 20,
+        width: 60,
+        height: 60,
       }}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 500 500"
-      width="200"
-      height="200"
+      width="30"
+      height="30"
     >
       <defs>
         <image

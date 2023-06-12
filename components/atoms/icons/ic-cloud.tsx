@@ -1,13 +1,11 @@
 import { FC, ReactElement } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { TIconProps } from "./types";
 
-export const IconCloud: FC<TIconProps> = ({ className }): ReactElement => (
+export const IconCloud: FC = (): ReactElement => (
   <AnimatePresence>
     <motion.svg
       animate={{ rotate: 360 }}
       transition={{ ease: "linear", duration: 2, repeat: Infinity }}
-      className={className}
       height="60px"
       width="60px"
       fill="white"

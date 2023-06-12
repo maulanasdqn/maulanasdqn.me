@@ -10,8 +10,9 @@ type THomeProps = {
 export const HomeModule: FC<THomeProps> = ({ story }): ReactElement => {
   return (
     <Fragment>
-      <IconCresentMoon y={0} x={0} className={`text-white w-screen left-[30%] fixed z-0 top-0`} />
-      <StoryblokComponent blok={story} />;
+      <IconCresentMoon />
+      <IconStar />
+      <StoryblokComponent blok={story} />
     </Fragment>
   );
 };
