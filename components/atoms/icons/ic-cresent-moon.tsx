@@ -6,8 +6,8 @@ export const IconCresentMoon: FC = (): ReactElement => (
     <motion.svg
       style={{
         position: "fixed",
-        x: -200,
-        y: 20,
+        x: 20,
+        y: -220,
         top: 0,
         left: 0,
       }}

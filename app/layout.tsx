@@ -109,7 +109,11 @@ export default function RootLayout({ children }: PropsWithChildren) {
         />
         <title>Portofolio | Maulana Sodiqin</title>
       </head>
-      <body className={roboto.className + " bg-primary-base"}>
+      <body
+        className={
+          roboto.className + " bg-gradient-to-b from-primary-base via-gray-800 to-slate-900"
+        }
+      >
         <main className="flex min-h-screen flex-col items-center justify-center">
           <QueryProvider>
             <Sidebar />

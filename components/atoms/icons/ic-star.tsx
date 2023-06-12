@@ -1,19 +1,18 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { FC, ReactElement } from "react";
 
-export const IconStar: FC = (): ReactElement => (
+export const IconStar: FC<{ x: number; y: number }> = ({ x, y }): ReactElement => (
   <AnimatePresence>
     <motion.svg
+      className="border-primary-100"
       style={{
         position: "fixed",
-        top: 20,
-        right: 20,
+        top: 0,
+        right: 0,
       }}
-      animate={{
-        width: 30,
-      }}
+      animate={{ width: [5, 10, 5], height: [5, 10, 5], rotate: 360, x: [x, x], y: [y, y] }}
       transition={{
-        width: 10,
+        duration: 2,
         repeat: Infinity,
       }}
       version="1.1"
@@ -22,8 +21,6 @@ export const IconStar: FC = (): ReactElement => (
       xmlnsXlink="http://www.w3.org/1999/xlink"
       x="0px"
       y="0px"
-      width={30}
-      height={30}
       fill={"#fff"}
       viewBox="0 0 122.88 122.88"
     >

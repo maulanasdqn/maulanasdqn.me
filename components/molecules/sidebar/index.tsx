@@ -39,15 +39,15 @@ export const Sidebar: FC = (): ReactElement => {
         height: "auto",
       }}
       initial={{
-        x: -120,
+        x: -400,
       }}
       animate={{
-        x: 0,
+        x: [-400, -10],
         y: 0,
       }}
       exit={{
         x: 0,
-        y: -120,
+        y: 400,
       }}
     >
       {_sidebar_item.map((item, index) => (
